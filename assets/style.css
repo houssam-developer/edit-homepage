@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --ff-primary: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+  /* background-color: #aff1da; */
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.page {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 35px;
+}
+header .navigation {
+  display: none;
+  gap: 2em;
+  max-width: 720px;
+}
+header .navigation a {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+@media screen and (min-width: 1024px) {
+  header .navigation {
+    display: flex;
+  }
+}
+header .btn-navigation-menu {
+  padding: 0.5em;
+  border: none;
+  background-color: #fff;
+}
+header .btn-navigation-menu svg {
+  width: 24px;
+  height: 24px;
+  color: orange;
+}
+@media screen and (min-width: 1024px) {
+  header .btn-navigation-menu {
+    display: none;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  color: rgb(116, 116, 116);
+}
+footer p {
+  font-weight: 400;
+}
+footer span {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+/* last call for cascade *//*# sourceMappingURL=style.css.map */

@@ -8,6 +8,64 @@
 	margin: 0 auto;
 } 
 
+.logo {
+	font-family: 'Heebo', Arial, Helvetica, sans-serif;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+header {
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.logo {
+		font-size: 24px;
+		font-weight: 800;
+		line-height: 35px;
+	}
+
+	.navigation {
+		display: none;
+		gap: 2em;
+		max-width: 720px;
+
+		a {
+			font-family: 'Poppins', sans-serif;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 36px;
+			letter-spacing: 0em;
+			text-align: left;
+			color: #333333;
+		}
+
+		@media screen and (min-width: 1024px) {
+			display: flex;
+		}
+	}
+
+	.btn-navigation-menu {
+		padding: .5em;
+		border: none;
+		background-color: #fff;
+
+		svg {
+			width: 24px;
+			height: 24px;
+			color: orange;
+		}
+
+		
+		@media screen and (min-width: 1024px) {
+			display: none;
+		}
+	}
+}
+
+
+
 footer {
 	text-align: center; 
 	padding: 1em;
