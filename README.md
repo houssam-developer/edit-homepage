@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Edie homepage</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://edie-homepage-he.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/houssam-developer/edit-homepage">
       Solution
     </a>
     <span> | </span>
@@ -37,22 +37,18 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![My Image](img/screenshot-demo.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+This interior consultant page can be found here: "https://recipe-page-he.netlify.app/".
+Thanks to that challenge, I learn to work efficiently in order to succeed.
+And I hope to make more beautifuls websites and become an expert in front-end developmemt :)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [HTML]
+- [CSS]
 
 ## Features
 
@@ -60,22 +56,15 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0) was to build an application to complete the given user stories.
 
-## How To Use
+Challenge: Create a static page with HTML and CSS following the designs. Don’t look at the existing solution. Fulfill user stories below:
 
-<!-- Example: -->
+- User story: I can see a page following the given design
+- User story: I can see a page on mobile following the given design
+- User story: I can go to certain locations by selecting links in navigation or footer
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+Icon: https://google.github.io/material-design-icons/
 
-```bash
-# Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
 
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
 
 ## Acknowledgements
 
@@ -87,6 +76,5 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [edie-homepage-he.netlify.app](https://edie-homepage-he.netlify.app)
+- GitHub [@houssam-developer](https://github.com/houssam-developer/edit-homepage)
