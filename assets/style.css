@@ -102,6 +102,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 5em;
+  margin-bottom: 5rem;
 }
 
 .section-home {
@@ -491,13 +492,25 @@ main {
 }
 
 footer {
-  border: 2px solid red;
+  background-color: #100E1D;
+}
+footer .content {
   min-height: 600px;
-  padding: 1em;
+  padding-top: calc(3vw + 1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #100E1D;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  footer .content {
+    flex-direction: row;
+    min-height: 385px;
+  }
 }
 footer * {
   font-family: "Poppins", sans-serif;
@@ -505,14 +518,18 @@ footer * {
   text-align: left;
   color: #333333;
 }
-footer ul a {
+footer .navigation {
+  display: flex;
+  flex-direction: column;
+}
+footer .navigation a {
   font-size: 1rem;
   font-weight: 500;
   line-height: 36px;
   color: #fff;
 }
 @media screen and (min-width: 1024px) {
-  footer ul {
+  footer .navigation {
     display: flex;
   }
 }
@@ -523,10 +540,16 @@ footer .company h2 {
   line-height: 53px;
   color: #F2F2F2;
 }
+footer .company__social-logos {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+}
 footer .footer-contact-us {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  max-width: 350px;
 }
 footer .footer-contact-us h3 {
   font-size: 10px;
@@ -538,6 +561,7 @@ footer .footer-contact-us form {
   display: flex;
   justify-content: space-between;
   background-color: #f2f2f2;
+  padding: 0.3em;
   border-radius: 12px;
 }
 footer .footer-contact-us form:focus-within {
@@ -547,6 +571,8 @@ footer .footer-contact-us form input[type=email] {
   border: none;
   outline: none;
   background-color: inherit;
+  padding-left: 1em;
+  max-width: 70%;
 }
 footer .footer-contact-us form input[type=email]::-moz-placeholder {
   font-family: "Poppins", sans-serif;
@@ -578,16 +604,20 @@ footer .footer-contact-us form input[type=submit] {
   line-height: 21px;
   text-align: center;
 }
-
-.footer {
+footer .created-by {
   text-align: center;
-  padding: 1em;
   color: rgb(116, 116, 116);
+  padding: 1em;
 }
-.footer p {
+@media screen and (min-width: 768px) {
+  footer .created-by {
+    padding: 0.5em;
+  }
+}
+footer .created-by p {
   font-weight: 400;
 }
-.footer span {
+footer .created-by span {
   font-weight: 700;
 }
 
