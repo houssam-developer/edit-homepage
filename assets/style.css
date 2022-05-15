@@ -19,6 +19,10 @@ ul {
   --ff-primary: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--ff-primary);
   /* background-color: #aff1da; */
@@ -198,9 +202,13 @@ main {
   padding: 0.3em;
   border-radius: 12px;
 }
+.section-home .contact-us form:focus-within {
+  border: 1px solid orange;
+}
 .section-home .contact-us form input[type=email] {
   flex-grow: 1;
   border: none;
+  outline: none;
   background-color: inherit;
   padding-left: 1em;
 }
@@ -483,14 +491,103 @@ main {
 }
 
 footer {
+  border: 2px solid red;
+  min-height: 600px;
+  padding: 1em;
+  background-color: #100E1D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+footer ul a {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 36px;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  footer ul {
+    display: flex;
+  }
+}
+footer .company h2 {
+  font-family: "Heebo", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 53px;
+  color: #F2F2F2;
+}
+footer .footer-contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+footer .footer-contact-us h3 {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #828282;
+}
+footer .footer-contact-us form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+}
+footer .footer-contact-us form:focus-within {
+  border: 1px solid orange;
+}
+footer .footer-contact-us form input[type=email] {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+footer .footer-contact-us form input[type=email]::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+footer .footer-contact-us form input[type=email]:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+footer .footer-contact-us form input[type=email]::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+footer .footer-contact-us form input[type=submit] {
+  background-color: #2D9CDB;
+  border-radius: 12px;
+  border: none;
+  min-width: 71px;
+  min-height: 39px;
+  color: #f2f2f2;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+}
+
+.footer {
   text-align: center;
   padding: 1em;
   color: rgb(116, 116, 116);
 }
-footer p {
+.footer p {
   font-weight: 400;
 }
-footer span {
+.footer span {
   font-weight: 700;
 }
 
