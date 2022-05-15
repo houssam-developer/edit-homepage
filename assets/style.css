@@ -96,7 +96,7 @@ header .btn-navigation-menu svg {
 main {
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 5em;
 }
 
 .section-home {
@@ -225,6 +225,87 @@ main {
   font-weight: 500;
   line-height: 21px;
   text-align: center;
+}
+
+.section-services {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.section-services * {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+.section-services h2 {
+  font-weight: 500;
+}
+.section-services h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.section-services p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #4f4f4f;
+}
+.section-services a {
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #e0e0e0;
+  color: #828282;
+  padding: 0.6em 1em;
+  border-radius: 12px;
+}
+.section-services ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+@media screen and (min-width: 768px) {
+  .section-services ul {
+    justify-content: space-evenly;
+  }
+}
+.section-services ul li {
+  max-width: 341px;
+}
+.section-services ul article {
+  padding: 2em;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+}
+.section-services ul article .container-svg {
+  padding: 1em;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+}
+.section-services ul article .container-svg svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+.section-services ul article .container-svg--ux {
+  background-color: #2D9CDB;
+  color: #fff;
+}
+.section-services ul article .container-svg--front {
+  background-color: #27AE60;
+}
+.section-services ul article .container-svg--back {
+  background-color: #EB5757;
+}
+.section-services ul article.current-selected {
+  box-shadow: 0px 10px 30px 0px rgba(51, 51, 51, 0.1019607843);
+}
+.section-services ul article.current-selected a {
+  background-color: #2D9CDB;
+  color: #fff;
 }
 
 footer {
