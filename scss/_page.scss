@@ -82,15 +82,25 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 2em;
+	
+	& > * {
+		padding-left: 1rem;
+
+		@media screen and (min-width: 768px) {
+			padding-left: 2rem;
+		}
+	}
 
 	h1, h2, h3, p, input[type="submit"] {
 		font-family: 'Poppins', sans-serif;
 		letter-spacing: 0em;
 		font-weight: 500;
 		text-align: left;
+	}
 
+	h1, h2, p, input[type="submit"] {
 		@media screen and (min-width: 768px) {
-			margin-left: 25%;
+			margin-left: 15%;
 		}
 	}
 
@@ -113,8 +123,9 @@ main {
 		height: 0;
 		padding-bottom: 56.25%;
 
-		@media screen and (min-width: 768px) {
-			padding-bottom: 25%;
+		@media screen and (min-width: 350px) {
+			min-height: 145px;
+			padding-bottom: 25%; 
 		}
 
 		img {
@@ -150,7 +161,7 @@ main {
 		max-width: 366px;
 
 		@media screen and (min-width: 768px) {
-			margin-left: 25%;
+			margin-left: 15%;
 		}
 		
 		h3 {

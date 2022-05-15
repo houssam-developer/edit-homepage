@@ -104,6 +104,14 @@ main {
   flex-direction: column;
   gap: 2em;
 }
+.section-home > * {
+  padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .section-home > * {
+    padding-left: 2rem;
+  }
+}
 .section-home h1, .section-home h2, .section-home h3, .section-home p, .section-home input[type=submit] {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0em;
@@ -111,8 +119,8 @@ main {
   text-align: left;
 }
 @media screen and (min-width: 768px) {
-  .section-home h1, .section-home h2, .section-home h3, .section-home p, .section-home input[type=submit] {
-    margin-left: 25%;
+  .section-home h1, .section-home h2, .section-home p, .section-home input[type=submit] {
+    margin-left: 15%;
   }
 }
 .section-home__head h1 {
@@ -130,8 +138,9 @@ main {
   height: 0;
   padding-bottom: 56.25%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 350px) {
   .section-home__ratio-container {
+    min-height: 145px;
     padding-bottom: 25%;
   }
 }
@@ -166,7 +175,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .section-home .contact-us {
-    margin-left: 25%;
+    margin-left: 15%;
   }
 }
 .section-home .contact-us h3 {
