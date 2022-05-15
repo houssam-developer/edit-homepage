@@ -24,6 +24,7 @@ body {
   /* background-color: #aff1da; */
   min-height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .page {
@@ -306,6 +307,85 @@ main {
 .section-services ul article.current-selected a {
   background-color: #2D9CDB;
   color: #fff;
+}
+
+.section-our-works {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.section-our-works * {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+.section-our-works h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.section-our-works h3 {
+  font-weight: 300;
+  font-size: 0.6rem;
+}
+.section-our-works p {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.section-our-works ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+.section-our-works ul li {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+}
+.section-our-works ul li:nth-child(2n+1) {
+  margin-top: 5em;
+}
+.section-our-works ul li article {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.section-our-works ul li article .container-img-ratio {
+  min-width: 150px;
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+}
+.section-our-works ul li article .container-img-ratio img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-our-works img {
+  border-radius: 16px;
+}
+.section-our-works .see-more {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.section-our-works .see-more * {
+  color: #2D9CDB;
+}
+@media screen and (min-width: 1024px) {
+  .section-our-works .see-more {
+    justify-content: flex-end;
+  }
 }
 
 footer {

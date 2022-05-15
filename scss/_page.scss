@@ -261,6 +261,7 @@ main {
 		}
 		
 		article {
+			
 			padding: 2em;
 			border-radius: 1.5rem;
 			display: flex;
@@ -295,6 +296,105 @@ main {
 	}
 }
 
+.section-our-works {	
+	
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+
+	& * {
+		font-family: 'Poppins', sans-serif;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #333333;
+	}
+
+	h2 { 
+		font-weight: 500; 
+		font-size: 1.5rem;
+	}
+	h3 { 
+		font-weight: 300; 
+		font-size: .6rem;
+	}
+	
+	p { 
+		font-weight: 400; 
+		font-size: 1.1rem;
+	}
+
+	ul { 
+	
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 1.5em;
+
+		li {
+			flex: 1 1 500px;
+			display: flex;
+			justify-content: center;
+
+			&:nth-child(2n + 1) {
+				margin-top: 5em;
+			}
+
+			article {
+				max-width: 550px; 
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: .5em;
+				
+				
+				.container-img-ratio {
+					min-width: 150px;
+					
+					width: 100%;
+					position: relative;
+					height: 0;
+					padding-bottom: 100%;
+
+					img {
+						position: absolute;
+						top: 0;
+						left:0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+
+	
+
+	img {
+		border-radius: 16px;
+	}
+	
+	.see-more {
+		font-size: 18px;
+		font-weight: 500;
+
+		display: flex;
+		align-items: center;
+		gap: 1em;
+
+		& * {
+			color: #2D9CDB;
+		}
+
+		@media screen and (min-width: 1024px) {
+			justify-content: flex-end;
+		}
+	}
+}
+
+.section-clients {}
+
+.section-contact {}
 
 footer {
 	text-align: center; 
