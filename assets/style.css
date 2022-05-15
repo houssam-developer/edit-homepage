@@ -388,6 +388,42 @@ main {
   }
 }
 
+.section-clients {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-clients * {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+.section-clients a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #EB5757;
+}
+.section-clients h2 {
+  font-weight: 500;
+  color: #333333;
+  font-size: 2.2rem;
+}
+.section-clients p {
+  font-weight: 400;
+  color: #4f4f4f;
+}
+.section-clients__intro {
+  flex-grow: 1;
+  width: 280px;
+}
+.section-clients__images {
+  border: 2px solid red;
+  width: 500px;
+}
+.section-clients__images img {
+  border-radius: 24px;
+}
+
 footer {
   text-align: center;
   padding: 1em;
